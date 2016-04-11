@@ -5,7 +5,7 @@ In order to create a Simple PHP Captcha, we will need to create a Session in the
 Session starts here. A random string is generated and set as the session variable. The random string is sent to the image.php and the resulted image is shown on the page with base64. The user is expected to enter the image characters in the form.
 
 ##image.php
-This page creates an image from our random string. You need to upload a font like "arial.ttf" in your root dir or any other folder.
+This page creates an image from our random string. You need to upload a font like "arial.ttf" in your root dir or any other folder and update Font in image.php. 
 
 ##response.php
 This page checks the user input against the session variable. If the user entered the correct string, the form submission will work.
