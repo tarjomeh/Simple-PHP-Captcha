@@ -1,6 +1,6 @@
 <?
 
-///IMAGE Creator
+// IMAGE Creator
 
 	$text = $_GET[t];
 	header('Content-type: image/jpeg');
