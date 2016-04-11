@@ -1,0 +1,2 @@
+# Simple-PHP-Captcha
+In order to create a Simple PHP Captcha, we will need to create a Session in the main page where our captcha is going to appear. In the second step, we need to set a session variable with a Random String. The random string should be converted to image using imagettftext() and then it is called with cURL in base64 and it is added to the page. The captcha checking form sends the user input to a response page where it is checked against the session variable.
