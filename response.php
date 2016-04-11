@@ -15,5 +15,6 @@ echo "Captcha Correct";
 echo "Wrong Captcha";
 
 }
+} 
 
 ?>
