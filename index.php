@@ -16,13 +16,13 @@ function generateRandomString($length = 5) {
 
 // Assign the Session With Random String
 
-$_SESSION['tode'] = generateRandomString();
-$thcode = $_SESSION['tode'];
+$_SESSION['code'] = generateRandomString();
+$thcode = $_SESSION['code'];
 
 
 // Convert String to Image and Grab it with CURL while it is Base64
 
-$url = "image.php?t=$_SESSION[tode]";
+$url = "image.php?t=$_SESSION[code]";
 $curl = curl_init($url);
 curl_setopt($curl, CURLOPT_RETURNTRANSFER, true );
 $ret_val = curl_exec($curl);
@@ -33,6 +33,8 @@ curl_close($curl);
 // Show the Image
 
 echo "<img id='codeId' src='data:image/jpg;base64,$b64_image_data'><br><br>
+
+// Captcha Form 
 
 <form name='captchaCheck' action='response.php' method='POST'>
 <input name='code' type='text' required>
