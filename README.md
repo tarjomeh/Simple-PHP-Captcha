@@ -8,4 +8,4 @@ Session starts here. A random string is generated and set as the session variabl
 This page creates an image from our random string. You need to upload a font like "arial.ttf" in your root dir or any other folder and update Font in image.php. 
 
 ##response.php
-This page checks the user input against the session variable. If the user entered the correct string, the form submission will work.
+This page checks the user input against the session variable. If the user entered the correct string, the form submission will proceed, unless it will fail.
