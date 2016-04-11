@@ -32,16 +32,12 @@ curl_close($curl);
 
 // Show the Image
 
-echo "<img id='codeId' src='data:image/jpg;base64,$b64_image_data'><br><br>
+echo "<img id='codeId' src='data:image/jpg;base64,$b64_image_data'><br><br>";
 
-// Captcha Form 
-
-<form name='captchaCheck' action='response.php' method='POST'>
+// Captcha Form
+echo "<form name='captchaCheck' action='response.php' method='POST'>
 <input name='code' type='text' required>
-</form>
-
-";
-
+</form>";
 
 ?>
 
