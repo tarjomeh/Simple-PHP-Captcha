@@ -1,6 +1,6 @@
 <?
 
-// IMAGE Creator
+// Create an Image from Random String
 
 	$text = $_GET[t];
 	header('Content-type: image/jpeg');
